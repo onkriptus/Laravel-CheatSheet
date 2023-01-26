@@ -156,3 +156,12 @@ php artisan make:request StoreUserRequest  to create a new validate in a separat
 # Must Veriy email
 
 https://larainfo.com/blogs/laravel-8-email-verification-with-laravel-ui
+
+
+# API
+
+Prefix route with namespace
+Route::group(['prefix' =>"V1", 'namespace' => 'App\Http|Controllers\Api\V1' ]);
+Must have use App\Http\Controllers\Controller in each controller;
+
+
